@@ -1,15 +1,14 @@
 
 import React from "react";
-
 // reactstrap components
 import {
   Button,
   Card,
   CardBody,
-  CardFooter,
-  CardTitle,
+  CardColumns,
+  CardLink,
   UncontrolledCollapse,
- 
+ CardImg, CardText,
   Container,
   Row,
   Col,
@@ -18,7 +17,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -102,10 +101,10 @@ instantly. 
               <Col md="4">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
+                    <i className="nc-icon nc-chat-33" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Initative</h4>
+                    <h4 className="info-title">Greet</h4>
                     <p>
                     Our online initiative will help
                     able and PWDs to meet,
@@ -154,89 +153,95 @@ encouraging while making new friends.
           
             </Row>
           </Container>
-        </div>
-        <div className="section section-dark text-center">
-          <Container>
-            <h2 className="title">Testimony</h2>
-            <Row>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      This have been a boon to me , absolutely amazing.
-                    </p>
-                  </CardBody>
-                  
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      A really nice idea.
-                    </p>
-                  </CardBody>
+          </div>
+        <div  className="section  section-nucleo-icons">
+        <Container>
+        <Row>
+          <Col lg="5" md="12">
+          <br/><br/><br/>
+            <h1 className="title" style={{color: "#1f1c1c", backgroundColor: "#f2f2f2", fontSize: "7vw", lineHeight: "7vw", fontWeight: "700", padding: "10px", margin:" 0 5px 24px",}}>  Misson</h1>
             
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                     I love this platform.
-                    </p>
-                  </CardBody>
-                  
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+            <h3 style={{fontSize: "2.5vw", fontWeight: "300",backgroundColor: "black",color:"white"}} className="description">
+              Inclusivity with Equality
+            </h3>
+            <br />
+            
+          </Col>
+          <Col lg="7" md="12">
+          <img
+          alt="..."
+          className="img-rounded img-responsive"
+          src={require("assets/img/pexels-karolina-grabowska-4041390(1).jpg")}
+        />
+          </Col>
+        </Row>
+      </Container>  
+            </div>
+
+      <br/>
+            
+        <div
+        style={{
+          backgroundImage:
+            "url(" + require("assets/img/pexels-elizaveta-dushechkina-3727149.jpg") + ")",
+          backgroundAttachment:"fixed",height:"45vh", backgroundSize:"cover"
+        }}        
+        className="section filter  content-center">
+        <div className="title-brand">
+        <Container>
+        <h1 className="presentation-title">Vision</h1>
+        <h2 className="presentation-subtitle text-center">
+        Bringing Behavioral Change
+      </h2>
+        </Container>
         </div>
-        
+        </div>
+<br/><br/>
+        <div>
+       
+        <h1 className="presentation-title text-center" style={{backgroundColor: "#ee9617",
+          backgroundImage: "linear-gradient(315deg, #ee9617 0%, #fe5858 74%)", textDecoration:"underline"
+          }}>NEWS</h1>
+         
+        <br/><br/>
+        <Container>
+        <CardColumns>
+        <Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/Indian Graffiti.png")} alt="..." />
+    <CardBody>
+        <CardText>Tanushree Sharma – Empowering people with disability on social & professional front!</CardText>
+        <CardLink href="https://www.indiangraffiti.com/loveactually/">See more</CardLink>
+    </CardBody>
+</Card>
+<Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/YourStory.png")} alt="..." />
+    <CardBody>
+        <CardText>LoveActuallyMe पीडबल्यूडी समुदाय के लिए अब एक खास ऐप लाने की तैयारी में है,
+        </CardText>
+        <CardLink href="https://yourstory.com/hindi/loveactuallyme-pwd-community-matchmaking-app">see more</CardLink>
+    </CardBody>
+</Card>
+<Card  style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/Newz Hook.png")} alt="..." />
+    <CardBody>
+        <CardText>Love Actually.me is a new venture that aims to change that. This two-month-old venture is the brainchild of three people, Tanushree Sharma, Rajneesh Sharma and Krishna Parulekar.</CardText>
+        <CardLink href="https://newzhook.com/story/20410/">See more</CardLink>
+    </CardBody>
+</Card>
+<Card style={{width: '20rem'}}>
+    <CardImg top src={require("assets/img/Media/socio-story-blue.png")} alt="..." />
+    <CardBody>
+        <CardText> Tanushree, said, “One of the main issues is lack of communication and preconceived notions about PWDs.</CardText>
+   <CardLink href="https://sociostory.org/impact-stories/a-platform-for-people-with-disabilities-to-be-out-and-about">see more</CardLink>
+        </CardBody>
+</Card>
+
+
+</CardColumns>
+</Container>
+        </div>
       </div>
-      <DemoFooter />
+     
     </>
   );
 }

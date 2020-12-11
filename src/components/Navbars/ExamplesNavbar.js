@@ -57,12 +57,12 @@ function ExamplesNavbar() {
             data-placement="bottom"
             to="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="Coded by Deepom"
             tag={Link}
           >
           <img
           style={{height:'70px'}}
-          src="/logo(2).png"
+          src="/logo.png"
         />
           </NavbarBrand>
           <button
@@ -95,12 +95,6 @@ function ExamplesNavbar() {
             </NavLink>
           </NavItem>
 
-          <NavItem>
-              <NavLink to="/news" tag={Link}>
-                 News
-              </NavLink>
-            </NavItem>
-
             <NavItem>
             <NavLink to="/events" tag={Link}>
                Events
@@ -108,7 +102,12 @@ function ExamplesNavbar() {
           </NavItem>
 
           <NavItem>
-              <NavLink to="/index" tag={Link}>
+            <NavLink to="/footer" tag={Link}>
+               Contacts
+            </NavLink>
+          </NavItem>
+          <NavItem>
+              <NavLink to="/blog" tag={Link}>
                  Blog
               </NavLink>
 

@@ -28,16 +28,17 @@ function LandingPageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/pexels-elevate-3009772.jpg") + ")",
+            "url(" + require("assets/img/pexels-jerome-dominici-612266.jpg") + ")", 
         }}
-        className="page-header"
+        className="page-header "
         data-parallax={true}
         ref={pageHeader}
       >
+      
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>LoveActually</h1>
+            <h1>LoveActually.me</h1>
             <h3>Start discovering your one and only.</h3>
             <br />
             
